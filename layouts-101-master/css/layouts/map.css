@@ -1,0 +1,40 @@
+.main-container {
+  display: flex;
+}
+.results-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.479);
+  padding: 50px 0px;
+  margin: 10px 0px;
+  flex: 0 0 30%;
+}
+#map {
+  height: 100vh;
+  flex: 0 0 400px;
+  position: sticky !important;
+  top: 0px !important;
+}
+@media (max-width: 900px) {
+  .card {
+    flex: 0 0 50%;
+  }
+  #map {
+    flex: 0 0 200px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}

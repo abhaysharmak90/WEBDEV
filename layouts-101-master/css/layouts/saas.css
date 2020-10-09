@@ -1,0 +1,63 @@
+.main-container {
+  display: flex;
+}
+.sidebar {
+  height: 100vh;
+  background-color: indigo;
+  padding: 0px 10px;
+  flex: 0 0 10rem;
+}
+.sidebar ul {
+  padding: 0px;
+}
+.sidebar li {
+  list-style-type: none;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.page-content {
+  overflow-y: scroll;
+  height: 100vh;
+  flex: 1 1;
+}
+.message {
+  display: flex;
+  margin: 30px 8px;
+  padding: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+}
+.message img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+.message-body span {
+  opacity: 0.3;
+  font-size: 10px;
+}
+.message-body h3 {
+  padding: 0px;
+  margin: 0px;
+}
+.message-body p {
+  font-size: 16px;
+  margin: 0px;
+}
+.aside {
+  height: 100vh;
+  background-color: lightcoral;
+  flex: 0 0 20%;
+}
+.aside h2 {
+  padding: 10px 30px;
+}
+.file {
+  padding: 10px 30px;
+}
+.code i {
+  color: rgb(255, 251, 6);
+}
+.video i {
+  color: rgb(123, 255, 0);
+}
