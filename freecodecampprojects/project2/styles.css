@@ -3,7 +3,7 @@
 }
 body {
   margin: 0px;
-  background-repeat:no-repeat;
+
   font-family: "Poppins", sans-serif;
   background-size: cover;
   background-position: center;
@@ -13,6 +13,7 @@ body {
       rgba(140, 31, 31, 0.6)
     ),
     url(images/bkgimg.jpg);
+  background-repeat:no-repeat;
 }
 #main {
   width: 70%;
