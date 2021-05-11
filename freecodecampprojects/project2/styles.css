@@ -3,17 +3,15 @@
 }
 body {
   margin: 0px;
-
   font-family: "Poppins", sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(
+  background: linear-gradient(
       135deg,
       rgba(117, 19, 247, 0.88),
       rgba(140, 31, 31, 0.6)
     ),
     url(images/bkgimg.jpg);
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #main {
   width: 70%;
@@ -73,11 +71,13 @@ body {
   padding: 2px 2px 2px 2px;
 }
 textarea {
+  resize: none;
   display: block;
+  height: 150px;
+  width: 100%;
+  overflow-x: scroll;
   font-size: 2em;
   font-weight: 600;
-  max-width: 100%;
-  min-height: 120px;
 }
 #submit {
   width: 100%;
@@ -113,5 +113,8 @@ textarea {
     font-size: 20px;
     font-weight: 400;
     padding: 8px;
+  }
+  textarea {
+    height: 80px;
   }
 }
