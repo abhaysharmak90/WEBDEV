@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Things</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+      }
+      body {
+        font-size: 30px;
+        text-align: center;
+        font-family: "Girassol", monospace;
+        min-height: 100vh;
+        background: linear-gradient(
+          to bottom left,
+          rgba(211, 35, 35, 0.9),
+          rgba(255, 102, 0, 0.7),
+          rgba(211, 35, 35, 0.9)
+        );
+        display: flex;
+        align-items: center;
+      }
+      .glassbg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-height: 80vh;
+        width: 70vw;
+        margin: auto;
+        padding: 20px;
+        background: linear-gradient(
+          45deg,
+          rgba(211, 35, 35, 0.7),
+          rgba(218, 151, 8, 0.2)
+        );
+        border-radius: 30px;
+        box-shadow: 5px -5px 10px rgba(211, 35, 35, 0.5);
+        z-index: 3;
+      }
+      .glasstile {
+        width: 30%;
+        padding: 10px 15px;
+        margin: 20px;
+        background: linear-gradient(
+          225deg,
+          rgba(255, 255, 255, 0.7),
+          rgba(235, 235, 235, 0.4)
+        );
+        border-radius: 10px;
+        box-shadow: -5px 5px 10px rgba(211, 35, 35, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        color: #650707;
+      }
+      .squares {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(
+          225deg,
+          rgba(211, 35, 35, 0.7),
+          rgba(218, 151, 8, 0.4)
+        );
+        border-radius: 10px;
+        box-shadow: -5px 5px 10px rgba(211, 35, 35, 0.7);
+        z-index: 1;
+      }
+      #s1 {
+        top: 30px;
+        left: 150px;
+      }
+      #s2 {
+        top: 130px;
+        right: 150px;
+      }
+      #s3 {
+        top: 50vh;
+        left: 50vw;
+      }
+      @media screen and (max-width: 800px) {
+        body {
+          font-size: 18px;
+        }
+        #s1 {
+          top: 30%;
+          left: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="squares" id="s1"></div>
+    <div class="squares" id="s2"></div>
+    <div class="squares" id="s3"></div>
+    <div class="glassbg">
+      <div class="glasstile">
+        <a href="freecodecampprojects/project1/index.html">Modi Page</a>
+      </div>
+      <div class="glasstile">
+        <a href="freecodecampprojects/project2/index.html">survey Page</a>
+      </div>
+      <div class="glasstile">
+        <a href="layouts-101-master/blogpost.html">Blogpost</a>
+      </div>
+      <div class="glasstile">
+        <a href="layouts-101-master/dashboard.html">Dashboard</a>
+      </div>
+      <div class="glasstile">
+        <a href="layouts-101-master/map.html">Map</a>
+      </div>
+      <div class="glasstile">
+        <a href="layouts-101-master/saas.html">Saas</a>
+      </div>
+    </div>
+  </body>
+</html>
