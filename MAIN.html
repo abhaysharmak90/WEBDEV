@@ -19,8 +19,6 @@
         list-style-type: none;
       }
       body {
-        font-size: 30px;
-        text-align: center;
         font-family: "Girassol", monospace;
         min-height: 100vh;
         background: linear-gradient(
@@ -29,6 +27,7 @@
           rgba(255, 102, 0, 0.7),
           rgba(211, 35, 35, 0.9)
         );
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
       }
@@ -37,7 +36,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         min-height: 80vh;
-        width: 70vw;
+        width: 80vw;
         margin: auto;
         padding: 20px;
         background: linear-gradient(
@@ -45,24 +44,25 @@
           rgba(211, 35, 35, 0.7),
           rgba(218, 151, 8, 0.2)
         );
-        border-radius: 30px;
         box-shadow: 5px -5px 10px rgba(211, 35, 35, 0.5);
+        border-radius: 30px;
         z-index: 3;
       }
       .glasstile {
-        width: 30%;
-        padding: 10px 15px;
-        margin: 20px;
+        width: 200px;
+        height: 200px;
         background: linear-gradient(
           225deg,
           rgba(255, 255, 255, 0.7),
           rgba(235, 235, 235, 0.4)
         );
-        border-radius: 10px;
         box-shadow: -5px 5px 10px rgba(211, 35, 35, 0.5);
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
+        font-size: xx-large;
       }
       a {
         color: #650707;
@@ -92,14 +92,12 @@
         top: 50vh;
         left: 50vw;
       }
-      @media screen and (max-width: 800px) {
-        body {
-          font-size: 18px;
+      @media screen and (max-width: 600px) {
+        .glasstile{
+          margin: 10px;
+          font-size: x-large;
         }
-        #s1 {
-          top: 30%;
-          left: 20%;
-        }
+      }
       }
     </style>
   </head>
