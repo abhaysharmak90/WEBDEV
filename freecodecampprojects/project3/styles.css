@@ -159,9 +159,12 @@ a {
   text-decoration: none;
   color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 690px) {
   * {
     font-weight: lighter;
+  }
+  #navigation-bar {
+    padding: 0px;
   }
   #companyname h1 {
     font-size: 30px;
@@ -192,4 +195,8 @@ a {
   iframe {
     height: auto;
   }
+}
+@media (min-width:700px) {
+  #header {
+    justify-content: space-between;
 }
