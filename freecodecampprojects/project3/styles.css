@@ -12,12 +12,13 @@ body {
   position: sticky;
   top: 0px;
   padding: 10px 50px;
-  margin-bottom: 50px;
+  background-color: #cccccc;
 }
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 #companyname {
   display: flex;
@@ -27,20 +28,20 @@ body {
   display: flex;
 }
 #logo {
-  width: 45px;
+  width: 60px;
 }
 .nav-link {
   margin: 2px 10px;
 }
 #companyname h1 {
   margin: 0px 10px;
-  font-size: 40px;
+  font-size: 45px;
 }
 #data-sub {
   margin: 50px 0px;
 }
 #data-sub h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 #form {
   margin: 20px 0px;
@@ -50,15 +51,15 @@ body {
 }
 #email {
   display: inline-block;
-  width: 275px;
+  width: 220px;
   height: 25px;
   font-size: 15px;
   padding: 0px 5px;
 }
 #submit {
   display: inline-block;
-  width: 150px;
-  height: 35px;
+  width: 100px;
+  height: 32px;
   font-size: 25px;
   font-family: "itim", sans-serif;
   background-color: #ffff39;
@@ -76,10 +77,11 @@ body {
 .feature {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 .featlogo {
-  width: 60px;
+  width: 100px;
   text-align: center;
 }
 .discription {
@@ -90,4 +92,80 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#prc-ch {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 50px auto;
+}
+.prc-rng {
+  border: 1px black solid;
+  width: 30%;
+}
+.prc-rng h4 {
+  font-size: 35px;
+  background-color: #4a4949;
+  color: whitesmoke;
+  padding: 10px 0px;
+}
+.prc-rng h5 {
+  margin: 20px 0px;
+  font-size: 30px;
+}
+.span-dscrp {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  display: inline-block;
+  width: 100px;
+  height: 32px;
+  margin: 20px 0px;
+  font-size: 25px;
+  font-family: "itim", sans-serif;
+  background-color: #ffff39;
+  border: 1px black solid;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #7b7b1c;
+  box-shadow: 2px 2px 4px #4a4949;
+}
+#footer {
+  background-color: #cccccc;
+  width: 80%;
+  margin: auto;
+  padding: 5px 20px;
+  text-align: end;
+}
+#footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#footer li {
+  margin: 0px 5px;
+  padding: 5px 0px;
+}
+#footer h5 {
+  color: rgb(0 0 0 / 32%);
+  font-weight: 100;
+}
+@media (max-width: 600px) {
+  * {
+    font-weight: lighter;
+  }
+  .prc-rng {
+    width: 80%;
+    margin: 10px auto;
+  }
+  #prc-ch {
+    flex-direction: column;
+  }
+  iframe {
+    height: auto;
+  }
 }
