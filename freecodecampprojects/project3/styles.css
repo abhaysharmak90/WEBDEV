@@ -12,11 +12,11 @@ body {
   position: sticky;
   top: 0px;
   padding: 10px 50px;
-  background-color: #cccccc;
+  background-color: #717171;
 }
 #header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -36,6 +36,7 @@ body {
 #companyname h1 {
   margin: 0px 10px;
   font-size: 45px;
+  color: white;
 }
 #data-sub {
   margin: 50px 0px;
@@ -154,9 +155,29 @@ body {
   color: rgb(0 0 0 / 32%);
   font-weight: 100;
 }
-@media (max-width: 600px) {
+a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 500px) {
   * {
     font-weight: lighter;
+  }
+  #companyname h1 {
+    font-size: 30px;
+  }
+  #data-sub h2 {
+    font-size: 22px;
+  }
+  .discription {
+    font-size: 12px;
+  }
+
+  .prc-rng h4 {
+    font-size: 18px;
+  }
+  .prc-rng h5 {
+    font-size: 16px;
   }
   .prc-rng {
     width: 80%;
@@ -164,6 +185,9 @@ body {
   }
   #prc-ch {
     flex-direction: column;
+  }
+  .btn {
+    font-size: 18px;
   }
   iframe {
     height: auto;
