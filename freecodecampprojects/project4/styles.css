@@ -44,3 +44,35 @@ code {
   padding: 20px;
   width: 70%;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.deats {
+  padding-top: 20px;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  #nav h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 799px) {
+  #main {
+    flex-direction: column;
+  }
+  #nav {
+    position: static;
+    width: 100%;
+    height: 320px;
+    border: 2px #c3baba solid;
+  }
+  #nav h1 {
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+  }
+  #discriptions {
+    margin: auto;
+  }
+}
