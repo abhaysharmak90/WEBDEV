@@ -47,6 +47,7 @@ code {
   display: inline-block;
   padding: 20px;
   width: 70%;
+  overflow: scroll;
 }
 a {
   text-decoration: none;
@@ -54,6 +55,9 @@ a {
 }
 .deats {
   padding-top: 20px;
+}
+#topsvg {
+  display: none;
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   #nav h1 {
@@ -76,40 +80,15 @@ a {
     position: sticky;
     top: 0px;
     background-color: white;
+    border: none;
   }
   #discriptions {
     margin: auto;
   }
-  #top-button {
-    padding: 5px;
-    display: block;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border: 2px black solid;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    display: flex;
-    align-items: center;
-  }
-  #arrowl {
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    width: 24px;
-    height: 5px;
-    transform: rotate(145deg);
-    justify-self: flex-start;
-  }
-  #arrowr {
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    width: 24px;
-    height: 5px;
-    transform: rotate(-145deg);
-    justify-self: flex-end;
+  #topsvg {
+    display: unset;
+    position: sticky;
+    bottom: 25px;
+    left: 80vw;
   }
 }
