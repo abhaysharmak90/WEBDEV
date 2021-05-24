@@ -28,14 +28,12 @@
           rgba(211, 35, 35, 0.9)
         );
         background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
+        margin: 30px 0px;
       }
       .glassbg {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        min-height: 80vh;
         width: 80vw;
         margin: auto;
         padding: 20px;
@@ -46,7 +44,7 @@
         );
         box-shadow: 5px -5px 10px rgba(211, 35, 35, 0.5);
         border-radius: 30px;
-        z-index: 3;
+        position: relative;
       }
       .glasstile {
         width: 200px;
@@ -61,8 +59,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        margin: 5px;
         font-size: xx-large;
+        z-index: 1;
+        text-align: center;
       }
       a {
         color: #650707;
@@ -78,19 +78,23 @@
         );
         border-radius: 10px;
         box-shadow: -5px 5px 10px rgba(211, 35, 35, 0.7);
-        z-index: 1;
+        z-index: 0;
       }
       #s1 {
-        top: 30px;
-        left: 150px;
+        top: 0px;
+        left: 0px;
       }
       #s2 {
-        top: 130px;
-        right: 150px;
+        top: -30px;
+        left: -30px;
       }
       #s3 {
-        top: 50vh;
-        left: 50vw;
+        bottom: 0px;
+        right: 0px;
+      }
+      #s4 {
+        bottom: -30px;
+        right: -30px;
       }
       @media screen and (max-width: 600px) {
         .glasstile {
@@ -101,9 +105,6 @@
     </style>
   </head>
   <body>
-    <div class="squares" id="s1"></div>
-    <div class="squares" id="s2"></div>
-    <div class="squares" id="s3"></div>
     <div class="glassbg">
       <div class="glasstile">
         <a href="freecodecampprojects/project1/index.html">Modi Page</a>
@@ -134,6 +135,10 @@
       <div class="glasstile">
         <a href="layouts-101-master/saas.html">Saas</a>
       </div>
+      <div class="squares" id="s1"></div>
+      <div class="squares" id="s2"></div>
+      <div class="squares" id="s3"></div>
+      <div class="squares" id="s4"></div>
     </div>
   </body>
 </html>
