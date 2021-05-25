@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#header {
+  margin: 0px 20px;
+  padding: 20px 0px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo img {
+  width: 50px;
+}
+#links {
+  display: flex;
+  align-items: center;
+}
+#links ul {
+  list-style-type: none;
+  display: flex;
+}
+#links li {
+  padding: 5px 10px;
+}
+#links a {
+  text-decoration: none;
+  color: black;
+}
