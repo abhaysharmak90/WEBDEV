@@ -4,15 +4,14 @@
   font-size: 20px;
   box-sizing: border-box;
 }
-
+body {
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
 #header {
   padding: 10px 50px;
   position: sticky;
-  background: linear-gradient(
-    to right bottom,
-    rgb(0, 0, 0),
-    rgb(100, 100, 100)
-  );
+  background-color: rgb(30, 30, 30);
   top: 0px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +34,7 @@
 }
 #links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #9b163f;
 }
 #intro {
   text-align: left;
@@ -44,6 +43,7 @@
   background-position: left;
   min-height: 80vh;
   padding-top: 150px;
+  box-shadow: 0px 0px 10px black;
 }
 #intro h1 {
   color: #ffeb3b;
@@ -61,7 +61,11 @@
   text-align: justify;
   color: #ff9800;
 }
+#projects {
+  padding: 30px;
+}
 #projects h2 {
+  color: #9b163f;
   text-align: center;
   font-size: 2rem;
   padding: 50px;
@@ -69,13 +73,53 @@
 #showcase {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .frame {
-  padding: 5px 10px 40px 10px;
-  background-color: blueviolet;
-  margin: 10px;
+  padding: 10px 10px 40px 10px;
+  background-color: #642279;
+  margin: 40px;
+  border-radius: 5px;
 }
 .frame img {
   width: 400px;
+  border-radius: 5px;
+}
+#about {
+  padding: 40px 200px;
+}
+#about h4 {
+  text-align: center;
+  color: #9b163f;
+  font-size: 1.5rem;
+  margin: 20px 0px;
+}
+#about p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: rgba(245, 245, 245, 0.4);
+}
+#footer {
+  box-shadow: 0px 0px 10px black;
+  padding: 20px 200px;
+}
+#contactinfo h4 {
+  text-align: center;
+  color: #9b163f;
+  font-size: 2.5rem;
+  margin: 20px 0px;
+}
+#contacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px 40px 10px;
+}
+@media (max-width: 786px) {
+  #about {
+    padding: 20px;
+  }
+  #footer {
+    padding: unset;
+  }
 }
