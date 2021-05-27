@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -20,20 +21,24 @@
             <a href=""><img src="" alt="icon" /></a>
           </li>
           <li>
-            <a href=""><img src="images/logo.svg" alt="logo" /></a>
+            <a href=""
+              ><img src="images/logo.svg" alt="logo" id="profile-logo"
+            /></a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <h1>Google</h1>
-      <form action="">
-        <input type="search" name="searchbox" id="srch" />
-        <input type="button" value="Search" />
-        <input type="button" value="I'm Feeling Lucky" />
-      </form>
-      <div>
-        <p>Google offered in</p>
+      <div id="srch-box">
+        <h1>Google</h1>
+        <form action="">
+          <input type="search" name="searchbox" id="srch" />
+          <input type="button" value="Search" class="srch-btns" />
+          <input type="button" value="I'm Feeling Lucky" class="srch-btns" />
+        </form>
+      </div>
+      <div id="xtra-langs">
+        <p>Google offered in :</p>
         <ul>
           <li>
             <a href=""> हिन्दी</a>
