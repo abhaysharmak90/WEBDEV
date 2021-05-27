@@ -39,6 +39,9 @@ body {
   text-decoration: none;
   color: #9b163f;
 }
+#links a:hover {
+  text-shadow: 0px 0px 2px white;
+}
 #intro {
   text-align: left;
   background-image: url("images/background.jpg");
@@ -111,7 +114,7 @@ body {
 }
 #footer {
   box-shadow: 0px 0px 10px black;
-  padding: 20px 200px;
+  padding: 20px 150px;
 }
 #contactinfo h4 {
   text-align: center;
@@ -121,17 +124,35 @@ body {
 }
 #contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   font-family: "Pattaya", "Quicksand", sans-serif;
 }
 #contacts span {
-  font-size: xx-large;
+  font-size: 2rem;
+}
+#contacts img {
+  width: 50px;
+}
+#contacts p {
+  padding: 0px 5px;
+}
+#contacts a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#contacts a:hover {
+  color: #9b163f;
+  text-shadow: 0px 0px 2px white;
 }
 @media (max-width: 786px) {
   * {
-    font-size: 10px;
+    font-size: 16px;
   }
   #header {
     padding: 10px;
@@ -163,5 +184,8 @@ body {
   }
   #footer {
     padding: unset;
+  }
+  #contacts span {
+    font-size: 1rem;
   }
 }
