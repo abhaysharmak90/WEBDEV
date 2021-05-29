@@ -3,7 +3,7 @@
   margin: 0px;
 }
 body {
-  height: 100vh;
+  overflow: hidden;
 }
 header {
   padding: 5px 10px;
@@ -15,7 +15,7 @@ header {
   align-items: center;
 }
 #nav li {
-  padding: 5px 10px;
+  padding: 8px 10px;
 }
 #nav a {
   text-decoration: none;
@@ -24,6 +24,14 @@ header {
 #nav a:hover {
   text-decoration: underline;
 }
+#apps-logo {
+  width: 20px;
+  padding: 10px;
+}
+#all-apps:hover {
+  background-color: #dadce0;
+  border-radius: 50%;
+}
 #profile-logo {
   width: 35px;
 }
@@ -31,20 +39,47 @@ main {
   text-align: center;
   height: 79vh;
 }
-#srch {
-  padding: 5px;
+#srch-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px #dadce0 solid;
+  border-radius: 40px;
+  width: fit-content;
+  margin: auto;
+  padding: 4px 15px;
+  flex-shrink: 2;
 }
-#srch:hover {
-  box-shadow: 0px 0px 2px #f2f2f2;
+#srch {
+  width: 45vw;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+#srch-bar img {
+  width: 18px;
+  padding: 0px 5px;
+}
+#btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  flex-shrink: 2;
 }
 .srch-btns {
-  padding: 5px;
-  margin: 4px 30px;
+  padding: 10px;
+  margin: 30px 5px;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f2f2f2;
+}
+.srch-btns:hover {
+  box-shadow: 0px 0px 2px #707070;
 }
 
-#srch-box {
-  padding: 20px;
-}
 #xtra-langs {
   display: flex;
   justify-content: center;
@@ -55,6 +90,7 @@ main {
   display: flex;
   align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 #xtra-langs li {
   padding: 5px 10px;
@@ -64,6 +100,8 @@ main {
 }
 footer {
   background-color: #f2f2f2;
+  position: sticky;
+  bottom: 0px;
 }
 #footer1 {
   padding: 10px;
@@ -88,4 +126,13 @@ footer {
 #footer2 li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+@media (max-width: 700px) {
+  #xtra-langs {
+    flex-shrink: 2;
+  }
+  #footer2 {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
