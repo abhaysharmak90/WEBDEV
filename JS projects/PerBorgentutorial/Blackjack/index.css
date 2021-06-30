@@ -1,0 +1,26 @@
+/* Complete the CSS styling according to the provided design */
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+  background-image: url("images/table.png");
+  background-size: cover;
+  color: white;
+  font-weight: bolder;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+.btns {
+  color: #016f32;
+  font-weight: bolder;
+  background-color: goldenrod;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
