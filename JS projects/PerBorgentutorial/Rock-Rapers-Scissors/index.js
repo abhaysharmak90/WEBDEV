@@ -3,17 +3,56 @@ let playerValue;
 let computerValue;
 let gameLog = [];
 let gameResult;
+let ans;
 let playerChose = document.getElementById("player-chose");
 let decision = document.getElementById("result");
 let computerChose = document.getElementById("computer-chose");
+let gameLg = document.getElementById("gamelog");
 
 function showDecision() {
   if (gameResult === true) {
     decision.innerHTML = "<h1>You Win</h1>";
+    ans = "Win";
   } else if (gameResult === false) {
     decision.innerHTML = "<h1> You Loose</h1>";
+    ans = "Loose";
   } else if (gameResult === undefined) {
     decision.innerHTML = "<h1>Draw</h1>";
+    ans = "Draw";
+  }
+}
+
+function showPlayerChoice() {
+  if (playerValue === hands[0]) {
+    playerChose.innerHTML = '<img src="images/rock.jpeg" alt="rock">';
+  } else if (playerValue === hands[1]) {
+    playerChose.innerHTML = '<img src="images/paper.jpeg" alt="rock">';
+  } else if (playerValue === hands[2]) {
+    playerChose.innerHTML = '<img src="images/scissor.png" alt="rock">';
+  }
+}
+
+function showComputerChoice() {
+  if (computerValue === hands[0]) {
+    computerChose.innerHTML = '<img src="images/rock.jpeg" alt="rock">';
+  } else if (computerValue === hands[1]) {
+    computerChose.innerHTML = '<img src="images/paper.jpeg" alt="rock">';
+  } else if (computerValue === hands[2]) {
+    computerChose.innerHTML = '<img src="images/scissor.png" alt="rock">';
+  }
+}
+
+function createLog() {
+  let logEntry =
+    "You Chose " +
+    playerValue +
+    "and Computer chose " +
+    computerValue +
+    "And You got a" +
+    ans;
+  gameLog.push(logEntry);
+  for (let i = 0; i < gameLog.length; i++) {
+    gameLg.textContent = gameLog[i];
   }
 }
 
@@ -54,6 +93,9 @@ function decideWinner() {
     gameResult = false;
   }
   showDecision();
+  showPlayerChoice();
+  showComputerChoice();
+  createLog();
 }
 
 function rps() {

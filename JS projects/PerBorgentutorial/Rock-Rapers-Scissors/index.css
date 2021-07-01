@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* text-align: center; */
 }
 body {
   background-color: #ffc5c5;
@@ -62,4 +61,7 @@ h1 {
 }
 #computer-chose {
   border-radius: 0px 4px 4px 0px;
+}
+img {
+  innerwidth: 50px;
 }
