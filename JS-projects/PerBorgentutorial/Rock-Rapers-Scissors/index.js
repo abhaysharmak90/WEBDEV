@@ -52,7 +52,7 @@ function createLog() {
     ans;
   gameLog.push(logEntry);
   for (let i = 0; i < gameLog.length; i++) {
-    gameLg.textContent += gameLog[i];
+    gameLg.textContent += gameLog[i] + "\n";
   }
 }
 
