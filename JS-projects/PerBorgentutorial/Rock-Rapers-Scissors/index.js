@@ -46,9 +46,9 @@ function createLog() {
   let logEntry =
     "You Chose " +
     playerValue +
-    "and Computer chose " +
+    " and Computer chose " +
     computerValue +
-    "And You got a" +
+    " And You got a" +
     ans;
   gameLog.push(logEntry);
   for (let i = 0; i < gameLog.length; i++) {
