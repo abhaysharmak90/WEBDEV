@@ -34,7 +34,12 @@ body {
   margin: 0rem 1rem;
 }
 #container {
+  width: 400px;
+  height: 400px;
   margin: auto;
+  border: 10px solid black;
+  border-radius: 4px;
+  display: grid;
 }
 .griditems {
   background-color: white;
