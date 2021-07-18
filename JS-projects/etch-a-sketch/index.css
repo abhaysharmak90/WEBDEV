@@ -34,15 +34,8 @@ body {
   margin: 0rem 1rem;
 }
 #container {
-  border: 5px solid black;
   margin: auto;
-  width: 70%;
-  height: 60vh;
 }
 .griditems {
-  width: 10px;
-  height: 5px;
-  border: 2px solid white;
-  background-color: red;
-  color: black;
+  background-color: white;
 }
