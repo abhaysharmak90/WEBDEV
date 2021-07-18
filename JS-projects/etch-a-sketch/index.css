@@ -44,3 +44,26 @@ body {
 .griditems {
   background-color: white;
 }
+@media (max-width: 786px) {
+  #title {
+    font-size: 3rem;
+  }
+  .btns {
+    margin: 5px;
+  }
+  #UI {
+    flex-direction: column;
+    margin: 50px 0px;
+  }
+  #UI div {
+    margin: 5px;
+    justify-content: center;
+  }
+  #UI span {
+    font-size: 1.4rem;
+  }
+  #container {
+    width: 90vw;
+    margin: 20px auto;
+  }
+}
